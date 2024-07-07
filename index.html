@@ -113,7 +113,9 @@ animation: blinker 2s linear infinite;
    link.click();
    sessionStorage.setItem('tokenAuth', tokenAuth);
    sessionStorage.setItem('GlobalSearchBGimg',GlobalSearchBGimg);
-   sessionStorage.setItem('GlobalVideoList', GlobalVideoList);
+   let reverseVideoList = JSON.pares(GlobalVideoList).reverse();
+   sessionStorage.setItem('GlobalVideoList', reverseVideoList);
+   /*sessionStorage.setItem('GlobalVideoList', GlobalVideoList);*/
    sessionStorage.setItem('GlobalMenuList', GlobalMenuList);
    sessionStorage.setItem('screenPageCount', screenPageCount);
  }
